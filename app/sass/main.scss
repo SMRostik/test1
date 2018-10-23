@@ -1,0 +1,121 @@
+.why-me{
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 1100px;
+    //background: #eee;
+    &__head{
+        display: flex;
+        //background: #000;
+    }
+    &__img-block{
+        width: 140px;
+        //height: 184px;
+    }
+    &__img{
+        width: 115px;
+    }
+    &__title{
+        width: 380px;
+        //margin-left: 10px;
+    }
+    &__sup{
+        opacity: 0.6;
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        color: #000;
+    }
+    &__sub{
+        font-size: 60px;
+        font-weight: bold;
+        line-height: 0.95;
+        color: #000000;
+        margin-top: 7px;
+    }
+}
+.wm-body{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+    &__block{
+        width: 262px;
+        height: 295px;
+        box-sizing: border-box;
+        padding: 15px;
+        border-radius: 4px;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
+        text-align: center;
+        &:hover{
+            cursor: pointer;
+            box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.1);
+        }
+    }
+    &__img-block{
+        height: 137px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__img{
+        width: 100px;
+    }
+    &__title{
+        color: #3e374b;
+        font-size: 26px;
+        font-weight: 600;
+    }
+    &__description{
+        color: #4a4a4a;
+        line-height: 1.5;
+        font-weight: 300;
+        font-size: 18px;
+        opacity: 0.7;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 1100px) {
+    .why-me{
+        width: 750px;
+        &__sub{
+            font-size: 45px;
+        }
+    }
+    .wm-body{
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .wm-body{
+        margin-top: 0;
+        &__block{
+            margin-top: 50px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .why-me{
+        width: 450px;
+        &__title{
+            width: 380px;
+        }
+        &__sub{
+            font-size: 45px;
+        }
+    }
+    .wm-body{
+        margin-top: 0;
+        &__block{
+            margin-top: 25px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .wm-body{
+        margin-top: 0;
+        &__block{
+            width: 100%;
+        }
+    }
+}
